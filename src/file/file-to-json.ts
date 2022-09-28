@@ -3,13 +3,13 @@
  * @param {Stream} data 文件内容
  * @returns {Promise}
  */
-function fileToJson (data: BlobPart) {
+function fileToJson (data: BlobPart): Promise<any> {
   return new Promise((resolve, reject) => {
     const reader = new FileReader()
 
     reader.onload = () => {
       const result = reader.result // 得到字符串
-      const data = JSON.parse((result as string)) // 解析成json对象
+      const data = JSON.parse(<string>result) // 解析成json对象
       resolve(data)
     }
 

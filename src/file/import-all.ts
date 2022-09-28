@@ -8,7 +8,7 @@ interface Mapping {
  * @param {Function} callback 回调函数
  * @returns {Object}
  */
-function importAll (context: any, callback: (key: string, value: any) => string) {
+function importAll (context: any, callback: (key: string, value: any) => string): Mapping {
   const mapping: Mapping = {}
 
   for (const key of context.keys()) {

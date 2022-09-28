@@ -3,10 +3,10 @@
  * @param {String|Stream} data 文件内容
  * @param {String} filename 文件名
  */
-function saveFile (data: BlobPart, filename: string) {
+function saveFile (data: BlobPart, filename: string): void {
   const blob = new Blob([data])
 
-  const navigator = (window.navigator as any)
+  const navigator = <any>window.navigator
   if (navigator.msSaveOrOpenBlob) {
     // 兼容IE 10
     navigator.msSaveOrOpenBlob(blob, filename)
