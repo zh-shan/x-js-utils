@@ -6,7 +6,9 @@ import { HSVA, RGBA } from '../../types/color'
  * @returns {Object} rgb颜色对象 { r, g, b, a }
  */
 function hsvToRgb ({ h, s, v, a }: HSVA): RGBA {
-  let r, g, b
+  let r = 0
+  let g = 0
+  let b = 0
 
   s = s / 100
   v = v / 100
@@ -18,6 +20,7 @@ function hsvToRgb ({ h, s, v, a }: HSVA): RGBA {
   const q = v * (1 - f * s)
   const t = v * (1 - (1 - f) * s)
 
+  // eslint-disable-next-line default-case
   switch (i % 6) {
     case 0:
       r = v
@@ -48,8 +51,6 @@ function hsvToRgb ({ h, s, v, a }: HSVA): RGBA {
       r = v
       g = p
       b = q
-      break
-    default:
       break
   }
 

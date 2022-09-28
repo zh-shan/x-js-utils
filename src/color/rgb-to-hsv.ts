@@ -12,8 +12,9 @@ function rgbToHsv ({ r, g, b, a }: RGBA): HSVA {
   const s = max === 0 ? 0 : d / max
   const v = max / 255
 
-  let h
+  let h = 0
 
+  // eslint-disable-next-line default-case
   switch (max) {
     case min:
       h = 0
@@ -26,8 +27,6 @@ function rgbToHsv ({ r, g, b, a }: RGBA): HSVA {
       break
     case b:
       h = (r - g + d * 4) / (6 * d)
-      break
-    default:
       break
   }
 
