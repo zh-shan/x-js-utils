@@ -1,6 +1,6 @@
 const RegRGBA = /^rgb(a)?\((\d{1,3}),(\d{1,3}),(\d{1,3}),?([01]?\.?\d*?)?\)$/
 
-import { RGBA } from '../../types/color'
+import { RGBA } from 'typings/color'
 import hexToRgb from './hex-to-rgb'
 
 /**

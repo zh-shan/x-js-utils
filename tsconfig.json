@@ -1,20 +1,33 @@
 {
   "compilerOptions": {
     "strict": true,
-    "target": "esnext",
-    "module": "commonjs",
+    "target": "es5",
+    "module": "esnext",
     "moduleResolution": "node",
-    "declaration": true,
-    "removeComments": false,
+    "declaration": true, // 生成相应的声明文件
+    "removeComments": true, // 删除注释
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true, // 启用装饰器
+    "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入
+    "listEmittedFiles": false, // 打印输出文件
     "sourceMap": false,
+    "incremental": false, // 增量编译
+    "lib": [
+      "ES5",
+      "ES6",
+      "DOM"
+    ],
+    "rootDir": "./",
     "outDir": "./lib",
-    "incremental": true,
+    "declarationDir": "./lib/typings",
     "types": [
       "node"
-    ]
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "typings/*": ["typings/*"]
+    }
   },
   "include": [
     "src/**/*.ts"

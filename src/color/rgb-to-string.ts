@@ -1,4 +1,4 @@
-import { RGBA } from '../../types/color'
+import { RGBA } from 'typings/color'
 
 /**
  * rgb对象转字符串

@@ -1,4 +1,4 @@
-import { RGBA } from '../../types/color'
+import { RGBA } from 'typings/color'
 import rgbToHex from './rgb-to-hex'
 import textToRgb from './text-to-rgb'
 

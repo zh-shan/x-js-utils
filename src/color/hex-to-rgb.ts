@@ -1,4 +1,4 @@
-import { RGBA } from '../../types/color'
+import { RGBA } from 'typings/color'
 
 /**
  * 十六进制颜色转rgb对象

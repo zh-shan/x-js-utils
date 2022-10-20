@@ -1,4 +1,4 @@
-import { HSVA, RGBA } from '../../types/color'
+import { HSVA, RGBA } from 'typings/color'
 
 /**
  * rgb对象转hsv对象

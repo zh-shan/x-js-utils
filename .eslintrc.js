@@ -83,6 +83,7 @@ module.exports = {
     'wrap-iife': ['error', 'any'], // 需要把立即执行的函数包裹起来
     'yield-star-spacing': ['error', { 'before': false, 'after': true }], // 强制在 yield* 表达式中 * 后使用空格
     'yoda': ['error', 'never'], // 禁止Yoda条件
-    '@typescript-eslint/no-explicit-any': 'off'
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-var-requires': 'off'
   }
 }
