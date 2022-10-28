@@ -4,7 +4,6 @@
     "target": "es5",
     "module": "esnext",
     "moduleResolution": "node",
-    "declaration": true, // 生成相应的声明文件
     "removeComments": true, // 删除注释
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true, // 启用装饰器
@@ -19,7 +18,6 @@
     ],
     "rootDir": "./",
     "outDir": "./lib",
-    "declarationDir": "./lib/typings",
     "types": [
       "node"
     ],
