@@ -1,4 +1,4 @@
-# `enhanced-js-utils`
+# `x-js-utils`
 
 ## 一、简介
 
@@ -14,7 +14,7 @@ yarn install
 ## 四、目录结构
 
 ```
-enhanced-js-utils
+x-js-utils
 ├── docs
 ├── src
 ├── typings

@@ -1,5 +1,5 @@
 {
-  "name": "enhanced-js-utils",
+  "name": "x-js-utils",
   "version": "1.0.0",
   "description": "js utils",
   "main": "lib/index.js",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zh-shan/enhanced-js-utils.git"
+    "url": "git+https://github.com/zh-shan/x-js-utils.git"
   },
   "author": "zhs",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zh-shan/enhanced-js-utils/issues"
+    "url": "https://github.com/zh-shan/x-js-utils/issues"
   },
-  "homepage": "https://github.com/zh-shan/enhanced-js-utils#readme",
+  "homepage": "https://github.com/zh-shan/x-js-utils#readme",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/preset-env": "^7.19.1",
