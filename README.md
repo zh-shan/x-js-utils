@@ -2,6 +2,15 @@
 
 ## 一、简介
 
+常用的工具函数库。
+
+推荐可直接使用的函数库：
+
+- [lodash](https://www.lodashjs.com/)
+- [dayjs](https://dayjs.gitee.io/docs/zh-CN/installation/installation)
+
+若上述函数库中已存在的函数方法，请直接使用，避免重复造轮子！
+
 ## 二、安装
 
 ```
