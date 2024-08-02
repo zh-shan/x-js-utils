@@ -5,9 +5,9 @@ import typescript from '@rollup/plugin-typescript'
 import { terser } from 'rollup-plugin-terser'
 import dts from 'rollup-plugin-dts'
 
-function build ({ output, es5 = false, minified = false, plugins = [] }) {
+function build ({ input = 'src/index.ts', output, es5 = false, minified = false, plugins = [] }) {
   return {
-    input: 'src/index.ts',
+    input,
     output,
     plugins: [
       // 解析依赖
@@ -27,14 +27,28 @@ function build ({ output, es5 = false, minified = false, plugins = [] }) {
 }
 
 export default [{
+  treeshake: false,
+  ...build({
+    minified: true,
+    input: 'src/index-all.ts',
+    output: {
+      file: 'lib/x-js-utils.esm.js',
+      format: 'esm',
+      sourcemap: false
+    }
+  })
+}, {
+  treeshake: false,
   ...build({
     es5: true,
     minified: true,
+    input: 'src/index-default.ts',
     output: {
-      file: 'lib/index.js',
-      name: 'JSUtils',
+      file: 'lib/x-js-utils.umd.js',
+      name: 'JsUtils',
       format: 'umd',
-      exports: 'default'
+      exports: 'default',
+      noConflict: true
     }
   })
 }, {

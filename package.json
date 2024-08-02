@@ -1,8 +1,9 @@
 {
   "name": "x-js-utils",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "js utils",
-  "main": "lib/index.js",
+  "main": "lib/x-js-utils.umd.js",
+  "module": "lib/x-js-utils.esm.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"
