@@ -1,8 +1,12 @@
+/**
+ * @module browser
+ */
+
 type LocationQuery = Record<string, any>
 
 /**
  * 解析URl的search参数
- * @param {String} search
+ * @param {String} search 要解析的字符串
  * @returns {LocationQuery}
  */
 function parseQuery (search: string): LocationQuery {

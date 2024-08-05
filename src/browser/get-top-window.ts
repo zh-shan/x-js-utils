@@ -1,9 +1,9 @@
 /**
  * 获取最顶层的同源window
- * @param {Window} win 当成window
+ * @param {Window} win 当前window
  * @returns {Window}
  */
-function getTopWindow(win: Window): Window {
+function getTopWindow (win: Window): Window {
   if (win === win.top) {
     return win
   }

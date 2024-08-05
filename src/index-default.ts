@@ -1,3 +1,3 @@
-import * as allExports from './index'
+import * as allExports from './exports'
 
 export default allExports

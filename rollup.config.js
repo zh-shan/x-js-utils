@@ -53,6 +53,7 @@ export default [{
   })
 }, {
   ...build({
+    input: 'src/index-default.ts',
     output: {
       file: 'lib/index.d.ts',
       format: 'es'

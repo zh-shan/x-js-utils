@@ -1,0 +1,12 @@
+{
+	"entryPoints": [
+		"./src/browser/index.ts",
+		"./src/color/index.ts",
+		"./src/date/index.ts",
+		"./src/file/index.ts",
+		"./src/number/index.ts",
+		"./src/string/index.ts",
+		"./src/validate/index.ts",
+	],
+	"out": "docs"
+}
